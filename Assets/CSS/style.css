@@ -6,7 +6,7 @@ background-color: white;
 border: 4px solid #ff6200;
 box-shadow: 0 0 15px rgb(0, 13, 255);
 margin-top:-181px;
-margin-left: 446px;
+margin-left: 435px;
 text-align: center;
 position: relative;
 
@@ -17,9 +17,10 @@ position: relative;
 
 .footer{
     height:48px;
-    width: 1483px;
+    width: 100%;
     background-color: rgb(26, 26, 26);
     margin-top: -9px;
+    margin-left: -8px;
     position: absolute;
     text-align: center;
 }
@@ -37,12 +38,12 @@ position: relative;
 text-decoration: "none"
 }
 html{
-width: 1920px;
+width: 100%;
 height:auto;
 }
     
 body { overflow-x: hidden;
-    width: 1480px;
+    width: 100%;
 }
 
 
