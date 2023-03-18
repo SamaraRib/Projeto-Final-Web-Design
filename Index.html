@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="Assets/CSS/navbar.css">
+    <link rel="stylesheet" href="Assets/CSS/carrousel.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <title>Projeto</title>
 </head>
-<body>
-    
+<body> 
+
+      <!--Inicio NavBar-->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__listlogo">
+             <img class="logo" src="Assets/IMG/logo.png" alt="textlogo">
+            </li>
+            <li class="nav__listitem">Inicio</li>
+            <li class="nav__listitem">Shopping
+                <ul class="nav__listitemdrop">
+                  <a class="links" href="Index.html"><li>Shopping Nova Iguaçu</li></a>
+                  <a class="links" href="Index.html"><li>Top Shopping</li></a>
+                  <a class="links" href="Index.html"><li>Center Shopping</li></a>
+                  <li></li>
+                </ul>
+              </li>
+            <li class="nav__listitem">Cinemas
+              <ul class="nav__listitemdrop">
+                <a class="links" href="Index.html"><li>Cineverde</li></a>
+                <a class="links" href="Index.html"><li>Cine Iguaçu</li></a>
+                <a class="links" href="Index.html"><li>Kinoplex - Nova Iguaçu</li></a>
+                <a class="links" href="Index.html"><li>Kinoples - Top Shopping</li></a>
+              </ul>
+            </li>
+            <a class="links" href=""><li class="nav__listitem">Curiosidades</li></a>
+            </li>
+            <a class="links"href=""><li class="nav__listitem">Sobre nós</li></a>
+          </ul>
+          
+        </nav>
+    <!--Final NavBar-->
+  
+    <div class="slider">
+        <div class="slides"> 
+        
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--Final Radio Buttons-->
+        
+        <!--Slide Images-->
+        
+        <div class="slide first">
+        <img src="Assets/IMG/mosaico.png" alt="mosaico">
+        </div>
+        <div class="slide">
+          <img src="Assets/IMG/foto shopp1.png" alt="pedreira">
+          </div>
+          <div class="slide">
+           <img src="Assets/IMG/top shopping.jpg" alt="topshopp">
+            </div>
+            <div class="slide">
+              <img src="Assets/IMG/kinoplex.png" alt="cineverde">
+               </div>
+        <!-- Final Slide Images-->
+        
+        <!--Navigation Auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        
+        </div>
+        
+        <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>  
+        <label for="radio4" class="manual-btn"></label> 
+        </div>
+        
+         </div>
+       
+        
+        <div class="TextoInicial">
+
+            <h1 style="color: #ff6200;">Olá! Seja Bem-Vindo(a)</h1>
+            <h3>Nesse site serão apresentados os cinemas e shoppings que 
+            fazem parte da história da cidade de Nova Iguaçu, detalhando
+            suas trajetórias ao longo do tempo e algumas curiosidades.</h3>
+
+
+
+        </div>
+        
+        <div class="background">
+        </div>
+ 
+        <div class="footer">
+          <h5 style="color: #ff6200;">Copyright © 2023 CVTI All rights reserved.</h5>
+        </div>
+
+
+         <br>
+         <script src="Assets/JS/script.js"></script>
 </body>
 </html>
