@@ -1,16 +1,15 @@
-body {
-    font-family: Montserrat, sans-serif;
-    background-color:rgb(55, 55, 55) ;
-  }
+/*   NavBar   */
 
-  .nav {
-    position: absolute;
+.navBar {
     width: 98%;
-    margin: -120px 6px;
+    margin: 7px auto;
     border-radius: 25px;
     border: 3px solid #ff6200;
-    box-shadow: 0 0 10px rgb(0, 13, 255);
-    
+    box-shadow: 0 0 10px #000dff;
+}
+
+.navBar .links{
+    text-decoration: none;
 }
 
 .nav__list{
@@ -18,32 +17,32 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
-    margin: 0 2rem;
-    
+    margin: 0 2rem; 
 }
 
 .nav__listlogo{
-
     list-style: none;
     margin-right: auto;
-    cursor: pointer;
 }
 
 .logo{
-     
     width: 12rem;
     margin-left: -60px;
     transition: fill 250ms ease-in;
 }
 
+/* Underline nos itens da NavBar*/
+
 .logo:hover {fill: #ff6200;}
 .logo:focus{fill:  #ff6200;}
 
-.nav__listitem{list-style: none;
-font-weight: bold;
-position: relative;
-padding: 1.5rem 1rem;
-cursor: pointer;}
+.nav__listitem{
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
 
 .nav__listitem::after{
     content: "";
@@ -56,20 +55,30 @@ cursor: pointer;}
     background-color: #ff6200;
     transition: width 200ms ease-in;
 }
-.nav__listitem:hover::after{width: 80%;}
-.nav__listitem:focus::after{width: 80%;}
-.nav__listitem:hover ul{opacity: 1;
-    visibility: visible;}
-.nav__listitem:focus ul{opacity: 1;
-    visibility: visible;}
 
+.nav__listitem:hover::after{width: 80%;}
+
+.nav__listitem:focus::after{width: 80%;}
+
+
+/* Estilo do Dropdown ativo*/
+
+.nav__listitem:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__listitem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
 
 .nav__listitemdrop{ 
     position: absolute;
     top: 4rem;
     left: -1rem;
     box-shadow: 0 0 10px #e1e5ee;
-    background-color: rgb(55, 55, 55);
+    background-color: #373737;
     border-radius: radius;
     width: 12rem;
     padding: 1rem;
@@ -79,20 +88,18 @@ cursor: pointer;}
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease-in-out;
-   }
+}
 
-   li {
+li {
     display: flex;
     color: #fff;
     list-style: none;
     padding: 1.5rem 1rem;
     border-radius: radius;
-    transition: background-color 200ms ease-in-out;}
+    transition: background-color 200ms ease-in-out;
+}
 
-    li:hover {color: #ff6200;}
-    li:focus{color:  #ff6200;}
+li:hover {color: #ff6200;}
+li:focus{color:  #ff6200;}
 
-
-    
-
-
+/*   FIM da NavBar   */
