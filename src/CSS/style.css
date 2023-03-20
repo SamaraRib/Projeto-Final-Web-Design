@@ -321,6 +321,19 @@ footer {
     color: #555555;
 }
 
+.container a {
+    text-decoration: none;
+    color: #ff6200;
+}
+
+.textFonte {
+    font-weight: 600;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
 /* FIM DO CSS PADRÃO */
 
 /* CSS INDIVIDUAL PÁGINA: */
