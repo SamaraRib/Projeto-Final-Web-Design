@@ -431,3 +431,99 @@ footer {
     height: 80px;
     margin: 0;
 }
+
+
+/* VERSÃO MOBILE NAVBAR */
+
+.openbtn{
+    font-size: 2.125rem;
+    cursor: pointer;
+    background-color: #373737;
+    color: white;
+    border: none;
+    display: none;
+}
+
+#mobileNav {
+    margin: 0px 5px;
+    background-color: #373737;
+    box-shadow: 0px 0px 10px 2px #ffffff43;
+    border-radius: 0px 0px 25px 25px;
+    height: fit-content;
+    border: none;
+    padding: 1rem 1rem 0rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    z-index: 1;
+}
+
+#mobileNav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#mobileNav p{
+    color: #8b8b8b;
+    margin-bottom: 8px;
+}
+
+#mobileNav ul{
+    padding: 0;
+}
+
+#mobileNav li{
+    padding: 0.5rem;
+    display: block;
+}
+
+#mobileNav .links li:hover{
+    padding-left: 20px;
+    transition: ease 0.3s;
+}
+
+.mobileShopping, .mobileCinema {
+    border-top: 1px solid #818181;
+}
+
+@media only screen and (max-width: 985px) {
+    .navBar{
+        min-width: 300px;
+        background-color: #373737;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .nav__list {
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    .nav__listitem{
+        display: none;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    #mobileNav {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 6.25rem;
+    }
+
+    .slider{
+        margin-top: 7.813rem;
+    }
+
+    .container img{
+        width: 80%;
+    }
+}
